@@ -5,10 +5,12 @@ import "./App.css";
 
 import HomePage from "./pages/homepage/homepage.components";
 import ShopPage from "./pages/shop/shop.components.jsx";
+import Header from "./components/header/header.component.jsx";
 
 function App() {
   return (
     <div>
+      <Header />
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route path="/shop" element={<ShopPage />} />
